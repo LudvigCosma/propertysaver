@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Property Saver",
+  "version": "1.0",
+  "description": "Save properties from Booli and Hemnet",
+  "icons": {
+    "16": "icons/heart16.png",
+    "48": "icons/heart48.png",
+    "128": "icons/heart128.png"
+  },
+  "browser_action": {
+    "default_popup": "properties.html",
+    "default_icon": {
+      "16": "icons/heart16.png",
+      "48": "icons/heart48.png",
+      "128": "icons/heart128.png"
+    }
+  },
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.hemnet.se/*", "*://*.booli.se/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}

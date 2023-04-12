@@ -1,0 +1,29 @@
+/* style.css */
+body {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#saveProperty {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#saveProperty img {
+  width: 48px;
+  height: 48px;
+}
+
+#saveProperty p {
+  margin-top: 5px;
+}
